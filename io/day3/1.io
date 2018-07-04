@@ -14,14 +14,17 @@ curlyBrackets := method(
     )
     r
 )
-
+OperatorTable println
 Map printAsAtrributes := method(
     self foreach(k, v,
         write(" ".. k .. "=\"" .. v .. "\"")
     )
 )
-
-
+s := {"abc": "123"}
+s println
+#s := "{\"bob\": \"1123\"}"
+#s := doString(s)
+#s println
 # Build the Builder from the Object
 Builder := Object clone
 Builder indentLevel := 0
@@ -33,6 +36,7 @@ Builder forward := method(
     isFirst := true
     call message arguments foreach(
         arg,
+        write(arg)
         if(isFirst,
             if(arg name == "curlyBrackets",
                 (self doMessage(arg)) printAsAtrributes)
@@ -57,4 +61,5 @@ Builder ul(
     li("Io")
     li("Lua")
     li("Javascript")
-    li({"author" : "Tate"}))
+    li({"author" : "Tate"})
+    )
