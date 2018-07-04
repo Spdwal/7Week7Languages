@@ -1,0 +1,2 @@
+srand 1111
+number = rand(20)
