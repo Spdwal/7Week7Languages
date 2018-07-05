@@ -1,0 +1,9 @@
+book(bjarne_stroustrup, the_cpp_programming_language).
+book(stanly_lippman, cpp_primer).
+book(stephen, c_primer_plus).
+book(kernighan, the_c_programming_language).
+book(randal_bryant, csapp).
+book(jay_succman, sicp).
+book(richard_stevens, apue).
+book(richard_stevens, tcpip_illustrated).
+book(richard_stevens, unp).
